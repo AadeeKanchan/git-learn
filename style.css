@@ -8,4 +8,8 @@ button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  background-color: #2da44e;
+  color: white;
+  border: none;
+  border-radius: 6px
 }
