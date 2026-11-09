@@ -6,3 +6,6 @@ document.getElementById("btn").addEventListener("click", () => {
   countDisplay.textContent = count;
   console.log("Work in progress...");
 });
+document.getElementById("reset-btn").addEventListener("click", () => {
+  countDisplay.textContent = 0;
+});
