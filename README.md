@@ -1,10 +1,10 @@
-# 📘 The Ultimate Git & GitHub Master Handbook: From Zero to Advanced
+#  Git & GitHub Handbook
 
-> A comprehensive, production-grade guide to mastering Git version control and GitHub collaboration — from internal architecture to advanced disaster recovery.
+> Comprehensive, production-grade guide to mastering Git version control and GitHub collaboration — from internal architecture to advanced disaster recovery.
 
 ---
 
-## 📑 Table of Contents
+##  Table of Contents
 
 1. [Architectural Mental Model: How Git Actually Works](#1-architectural-mental-model-how-git-actually-works)
 2. [Setup, Identity & Productive Configurations](#2-setup-identity--productive-configurations)
@@ -239,14 +239,14 @@ git fetch origin                     # Downloads objects/refs from remote WITHOU
 
 | Goal | Command | Scope | Safe for Shared Branches? |
 |---|---|---|---|
-| Discard unstaged edits in a file | `git restore <file>` | Working tree | ✅ Yes |
-| Discard all unstaged edits | `git restore .` | Working tree | ✅ Yes |
-| Unstage a file | `git restore --staged <file>` | Staging area | ✅ Yes |
-| Fix the last commit message/files | `git commit --amend` | Last commit | ⚠️ Only if unpushed |
-| Stash work in progress | `git stash` / `git stash pop` | Stash queue | ✅ Yes |
-| Soft undo last commit | `git reset --soft HEAD~1` | History | ⚠️ Only if unpushed |
-| Hard wipe last commit & edits | `git reset --hard HEAD~1` | Working tree & history | ❌ Dangerous |
-| Reverse a committed change safely | `git revert <commit-hash>` | New commit | ✅ Yes (Best for public) |
+| Discard unstaged edits in a file | `git restore <file>` | Working tree |  Yes |
+| Discard all unstaged edits | `git restore .` | Working tree |  Yes |
+| Unstage a file | `git restore --staged <file>` | Staging area |  Yes |
+| Fix the last commit message/files | `git commit --amend` | Last commit |  Only if unpushed |
+| Stash work in progress | `git stash` / `git stash pop` | Stash queue |  Yes |
+| Soft undo last commit | `git reset --soft HEAD~1` | History |  Only if unpushed |
+| Hard wipe last commit & edits | `git reset --hard HEAD~1` | Working tree & history |  Dangerous |
+| Reverse a committed change safely | `git revert <commit-hash>` | New commit |  Yes (Best for public) |
 
 ### Git Stash Deep-Dive
 ```powershell
@@ -384,12 +384,12 @@ Adopt the industry-standard Conventional Commits specification:
 - `chore:` Updating build tasks, package manager configs, etc.
 
 ### Core Best Practices Checklist
-- ✅ **Commit often, commit atomically**: One logical change per commit.
-- ✅ **Write imperative commit messages**: "feat: add user login" (not "added user login").
-- ✅ **Never rewrite public history**: Avoid `rebase` or `reset --hard` on branches shared with others.
-- ✅ **Pull with rebase**: Run `git pull --rebase` to avoid cluttered merge diamonds.
-- ✅ **Keep `.gitignore` updated**: Never commit node_modules, `.env`, binaries, or OS artifacts.
+-  **Commit often, commit atomically**: One logical change per commit.
+-  **Write imperative commit messages**: "feat: add user login" (not "added user login").
+-  **Never rewrite public history**: Avoid `rebase` or `reset --hard` on branches shared with others.
+-  **Pull with rebase**: Run `git pull --rebase` to avoid cluttered merge diamonds.
+-  **Keep `.gitignore` updated**: Never commit node_modules, `.env`, binaries, or OS artifacts.
 
 ---
 
-*Authored with ❤️ for mastering Git and GitHub.*
+*Authored for mastering Git and GitHub.*
